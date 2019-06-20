@@ -1,47 +1,47 @@
-# JavaScript Test: Advanced Topics
+# JavaScript Test: Fortgeschrittene Themen
 
-## Answer the questions to the best of your abilities! Try out all the questions. 
+## Beantworte die Fragen nach bestem Wissen und Gewissen! Versuche alle Fragen zu beantworten.
 
-### Time: 2hrs 
+### Zeit: 2 Stunden
 
 #### 1. >10
-Check if the values of an array are larger than 10. Return the values that are larger than 10 in an array. **Do not use a loop.** 
+Checke, ob Werte innerhalb eines Arrays größer als 10 sind. Gib Werte, die größer als 10 sind in einem Array zurück. **Benutze keine Schleife** 
 
-#### 2. Validation 
-Come up with a new way to validate a pin code with a simple function called validatePin that returns true (for a valid pin code) or false (for an invalid pin code).
+#### 2. Validierung 
+Du erfindest eine neue Art, einen PIN Code zu validieren. Schreibe eine einfache Funktion namens validatePin, die true zurückgibt (für einen validen PIN Code) oder false (für einen invaliden PIN Code).
 
-Here are the rules for a valid password:
+Das sind die Regeln für einen validen PIN: 
 
-* The pin code must consist of only numbers
-* The pin code must be 4 digits long
-* The pin code should have at least two different digits represented
-* The pin code's last digit should be even
-* The pin code should add up to at least 5
+* Der PIN Code darf nur aus Zahlen bestehen
+* Der PIN Code muss vierstellig sein
+* Der PIN Code muss mindestens zwei verschiedene Ziffern beinhalten
+* Die letzte Zahl des PIN Codes muss gerade sein
+* Die Summe des PIN Codes muss mindestens 5 sein
 
 
--Examples: 
--The following pin codes are valid:
+-Beispiele: 
+-Die folgenden PIN Codes sind zulässig:
 * 1112
 * 1994
 
--The following pin codes are invalid:
-* 1c24 // is not a number
-* 12344 // five digit pin code
-* 1235 // last digit is odd
-* 1110 //sum less than 5
+-Die folgenden PIN Codes sind nicht zulässig:
+* 1c24 // ist keine Zahl
+* 12344 // fünfstelliger PIN Code
+* 1235 // Letzte Ziffer ist ungerade
+* 1110 // Die Summe ist kleiner als 5
 
-#### 3. Class Blueprint
+#### 3. Klassen Blaupause
 
-Create a blueprint for a course at DCI e.g. FwB 13a - using the "class" syntax in javascript.
-* The class should contain whether the course is a year long course or an orientation course.
-* The class should contain who the teacher is. 
-* The class should contain whether the group is learning marketing or web development. 
-* The class should contain the number of students taking the course.
-* The class should have a method that checks how big a classroom should be depending on the number of students taking the course. 1 student =  22m². 
-* Add a method using "prototype" to print all the details of the course e.g. "This is a year long web development course taught by John Smith. There are 10 students taking the course."
+Kreire eine Blaupause für einen Kurs beim DCI, z.B. FbW14d - nutzt die "class" Syntax von Javascript.
+* Die Klasse soll beinhalten, ob der Kurs ein Jahreskurs oder ein Orientierungskurs ist.
+* Die Klasse soll beinhalten, wer ihr Lehrer ist. 
+* Die Klasse soll beinhalten, ob es ein Web Development Kurs oder ein Online Marketing Kurs ist. 
+* Die Klasse soll die Anzahl der Studenten beinhalten. 
+* Die Klasse soll eine Methode haben, die die Größe des Klassenraums aufgrund der Anzahl der Studenten berechnet. 1 Student =  22m². 
+* Füge eine Methode als "prototype" hinzu, die alle Details eines Kurse ausgibt, z.B. "Das ist ein Jahreskurs Web Development Kurs, unterrichtet von Jean Smith. Es gibt 10 Studenten in diesem Kurs. Der Raum ist 220 Quadratmeter groß."
 
-#### 4. Events  
-Each event below has a different turnout. Sort the array of objects based on which day of the week had the highest turnout. Highest turnout -> lowest turnout.
+#### 4. Ereignisse  
+Jedes Ereignis hat einen anderen turnout (Ausstoß). Sortiere das Array von Objekten basierend auf den Tag, der am meisten Ausstoß hatte. Höchster Ausstoß -> niedrigster Ausstoß.
 
 ```javascript
 let events = [
@@ -53,24 +53,24 @@ let events = [
 ]
 ```
 
-#### 5. Return Squared Odds
-**Complete this without using a loop.**
-Create a function (or series of functions) that takes in an array of numbers, squares every number, removes all results that are even, and returns an array of odd numbers.
+#### 5. Gib ungerade Quadratzahlen zurück
+**Benutze für diese Aufgabe eine Schleife.**
+Kreiere eine Funktion (oder eine Serie von Funktionen) die ein Array von Zahlen bekommt, diese quadriert, alle gerade Zahlen entfernt und als Array die ungeraden Zahlen zurückgibt.
 
-#### 6. 10,000  
-Create a (small) game!
-* Each player has 6 dice. (Each dice has the possibility to roll from 1-6).
-* Each player rolls all 6 dice during each turn and the player's score is added to their individual total. 
-* The first player to reach 10,000 wins. 
+#### 6. 10.000  
+Baue ein (kleines) Spiel!
+* Jeder Spieler hat 6 Würfel. (Jeder Würfel hat die Möglichkeiten, bei 1-6 stehen zu bleiben).
+* Jeder Spieler würfelt all 6 Würfel jedes Mal, wenn er dran ist und das Ergebnis wird zu seinem Punktestand addiert. 
+* Der erste Spieler, der 10.000 Punkte erreicht, gewinnt!
 
-* Example of expected output: "Player 1: 9984, Player 2: 10,002 - Player 2 wins!"
+* Beispiel vom erwarteten Output: "Spieler 1: 9984, Spieler 2: 10.002 - Spieler 2 gewinnt!"
 
-#### 7. World Cup 
-How long has it been since Germany won the world cup? Get the number of days since Germany won the cup. Germany last won on the 13th of July 2014. 
+#### 7. Weltmeisterschaft
+Wie lang ist es her, seit Deutschland die Fußballweltmeisterschaft gewonnen hat? Berechne die Anzahl der Tage seit dem letzten Sieg. Deutschland hat zuletzt am 13. Juni 2014 gewonnen.
 
-#### 8. Working Hours
-Calculate how many hours (total) this person worked in the week. 
-* Note: start is always morning time, end is always afternoon. 
+#### 8. Arbeitsstunden
+Berechne, wie viele Stunden (insgesamt) diese Person diese Woche gearbeitet hat. 
+* Notiz: Start ist immer morgens, Ende ist immer abends. 
 
 ```javascript
 const hourTracking = [
@@ -83,7 +83,7 @@ const hourTracking = [
 ```
 
 #### 9. Callback 
-**Part 1**: Given the code below, write a function with a callback. The function should return a new array with each element calculated to the power of 2. 
+**Teil 1**: Gegeben sei folgender Code unten, schreibe eine Funktion mit einem Callback. Die Funktion soll ein neues Array zurückgeben, das jedes Element hoch zwei ausrechnet. 
 
 ```javascript
 function mapping(){
@@ -91,12 +91,12 @@ function mapping(){
 }
 const powerOfTwo = mapping([1,2,3,4,5], (val) => Math.pow(val,2) );
 ```
-Expected Output: [1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]
+Erwartetes Output: [1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]
 
-**Part 2**: Create another variable, call the `mapping` function again, but now change the callback function to return an array of the square root of each element. 
+**Teil 2**: Erstelle eine andere Variable, rufe die "mapping" Funktion noch einmal auf, aber ändere jetzt die Callback Funktion so, dass sie ein Array der Wurzeln jedes Elements zurückgibt. 
 
 #### 10. 2D Array
-Given the 2D Array below, **loop** through the arrays to print the values. 
+Gegeben ist das folgende 2D Array, gehe mit einer **Schleife** durch das Array um die Werte auszugeben.
 ```javascript
 let board = [[1, 2, 3], 
 	     ["quick", "brown", "fox", "jumped", "over", "lazy", "dog"], 
@@ -104,5 +104,5 @@ let board = [[1, 2, 3],
 ```
 
 
-##### Good luck! :)
+##### Viel Erfolg! :)
 
